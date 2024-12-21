@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Horizontal Scroller</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .scroller-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 20px 0;
+    }
+
+    .scroller {
+      display: flex;
+      width: calc(200px * 10 * 2); /* Width of 10 items * 2 for looping effect */
+      animation: scroll 10s linear infinite;
+    }
+
+    .scroller .item {
+      width: 200px;
+      height: 100px;
+      background-color: #4caf50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      margin-right: 0; /* No gaps */
+    }
+
+    /* Duplicate items for seamless looping */
+    .scroller .item:nth-child(odd) {
+      background-color: #2196f3;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroller-container">
+    <div class="scroller">
+      <!-- Duplicate the items to create a seamless loop -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+
+      <!-- Duplicate for continuous loop -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </div>
+</body>
+</html>

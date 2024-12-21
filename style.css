@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root{
+  --green : rgb(12,84,60);
+  --yellow : #FFF4DE;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Styling of Header and Footer has Started */
+header{
+  height: 70px;
+  display:flex;
+  justify-content: space-between;
+  background-color:var(--green) ;
+  color: var(--yellow);
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-size:21px;
+}
+header h1{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: max-content;
+}
+#heading{
+  color:var(--yellow);
+  position:relative;
+  left:55%;
+  top:13%;
+}
+.college h5{
+  position:absolute;
+  top:7%;
+  left:14%;
+  z-index:1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  position:relative;
+  top:35%;
+}
+nav a:hover{
+  background-color:var(--yellow);
+  color:var(--green);
+  border-radius:15%;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color:var(--yellow);
+  font-weight: bold;
+  font-size: 20px;
+  margin:10px;
+  padding:5px;
+}
+footer{
+  background-color: var(--green);
+  color:var(--yellow);
+  height: 150px;
+  display:flex;
+  justify-content: space-evenly;
+  border-top:2px solid var(--yellow);
+}
+footer img{
+  width:80px;
+  height:80px;
+  object-fit: cover;
+  position: relative;
+  left:5.5%
+}
+#left{
+  width:25%;
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  margin-top:1%;
+}
+#center p{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:28px;
+  color:var(--green);
+  background-color: var(--yellow);
+  border-radius:5%;
+  padding:2px;
+  margin-top:2%;
+}
+#center ul li{
+  list-style: none;
+}
+#center a{
+  color:var(--yellow);
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  margin-top: 15%;
+}
+#center a:hover{
+  background-color: var(--yellow);
+  color:var(--green);
+  border-radius:10%;
+  margin-top:5%;
+}
+#right h2{
+  color:var(--green);
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size:28px;
+  letter-spacing: 2px;
+  padding:2px;
+  margin-top:2%;
+  border-radius:4%;
+  text-align: center;
+  background-color:var(--yellow);
+}
+/* Styling of Header and Footer has Ended */
+
+
+.front img{
+  position:relative;
+  left:33.5%;
+} 
+.background{
+  margin-top:0%;
+  background-position:center;
+  background-attachment: fixed;
+  width:100%;
+  height:550px;
+  background-image: url(image.png);
+  background-size: cover;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.title{
+  color:rgb(252, 244, 220);
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 48px;
+  word-spacing: 50px;
+  letter-spacing:5px;
+}
+.vision{
+  background-color: var(--yellow);
+  height:700px;
+  width:100%;
+  font-size: 56px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vision img{
+  height:300px;
+  width:300px;
+  position:absolute;
+  margin-left:70%;
+  margin-top:20%;
+}
+.main{
+  height:300px;
+  width:80%;
+  margin-left:12%;
+}
+.second p {
+  margin-bottom: 5%;
+}
+.second{
+  width:45%;
+  font-size: 20px;
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  margin-left: 12%;
+}
+#btn0{
+  padding:12px 24px;
+  border:2px solid var(--green);
+  font-size: 16px;
+  width:175px;
+  height:50px;
+  color:var(--green);
+  margin-left:12%;
+  margin-top:5%;
+}
+#btn0:hover{
+  background-color: var(--green);
+  color:var(--yellow)
+}
+.objectives{
+  height:720px;
+}
+.img1{
+  height:400px;
+  width:400px;
+  background-color: aliceblue;
+  position:absolute;
+  left: 10%;
+  top: 200%;
+  text-align:center;
+}
+.img1 img{
+  height:300px;
+  width:300px;
+  margin-top:12%;
+}
+.img2 img{
+  height:300px;
+  width:300px;
+  margin-top:12%;
+}
+.img3 img{
+  height:300px;
+  width:300px;
+  margin-top:12%;
+}
+.img2{
+  height:400px;
+  width:400px;
+  background-color: aliceblue;
+  position:absolute;
+  left:2%;
+  top:220%;
+  text-align:center;
+}
+.img3{
+  height:400px;
+  width:400px;
+  background-color: aliceblue;
+  position:absolute;
+  z-index:1;
+  top: 233%;
+  left:15%;
+  text-align:center;
+}
+.main2{
+  height:150px;
+  width:50%;
+  margin-left:45%;
+  font-size:48px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:var(--yellow);
+  position: relative;
+  top:10%;
+  z-index:1;
+}
+.second2{
+  width:45%;
+  font-size: 20px;
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  position: relative;
+  left: 45%;
+  color:var(--yellow);
+  top:6%;
+  z-index:1;
+}
+#btn{
+  padding:12px 24px;
+  border:2px solid var(--green);
+  font-size: 16px;
+  width:175px;
+  height:50px;
+  color:var(--green);
+  position: relative;
+  left:45%;
+  top: 10%;
+  z-index:1;
+  background-color: var(--yellow);
+}
+#btn:hover{
+  background-color: var(--green);
+  color:var(--yellow);
+  border:2px solid var(--yellow);
+}
+.content{
+  background-color: var(--yellow);
+  height:100%;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+.image img{
+  height: 700px;
+  width: 1050px;
+  position: relative;
+  left:15%;
+  top:5%
+}
+.lines p {
+  margin-bottom: 5%;
+  font-size:48px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  left:2%;
+}
+.lines2{
+  margin:2%;
+}
+.lines{
+  height:350px;
+  width:45%;
+  background-color: var(--green);
+  color:var(--yellow);
+  z-index:1;
+  font-size: 20px;
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  position: relative;
+  left: -15%;
+  top:10%;
+}
+.roller{
+  width:100%;
+  height:200px;
+  text-align: center;
+  font-size:48px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:var(--green);
+  background-color: var(--yellow);
+}
+#roll{
+  background-color:var(--green) ;
+  color:var(--yellow);
+}
+.email p{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:48px;
+  margin:5%;
+}
+.login{
+  background-color: var(--yellow);
+  width:100%;
+  height:513px;
+}
+#login {
+  background-color: var(--yellow);
+  text-align: center;
+}
+.login img{
+  width:580px;
+  height:513px;
+  margin-left:55%;
+  position:absolute;
+}
+.email b{
+  margin-left:5%;
+}
+.email{
+  width:50%;
+  height:513px;
+  background-color: var(--green);
+  color:var(--yellow);
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:5%;
+}
+.email input{
+  height:21px;
+  width:345px;
+  padding:8px 12px;
+  background-color: var(--yellow);
+  margin:20px;
+  margin-left:5%;
+}
+#btn3{
+  margin-left:5%;
+  margin-top:1%;
+  color:var(--yellow);
+  border:2px solid var(--yellow);
+  background-color: var(--green);
+  padding:12px 24px;
+  font-size: 16px;
+  width:175px;
+  height:50px;
+}
+#btn3:hover{
+  background-color:var(--yellow);
+  color:var(--green);
+}
+.text-num{
+  width:100%;
+  height:320px;
+  background-color: var(--green);
+  color: var(--yellow);
+}
+.left-text p{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:48px;
+}
+.left-text{
+  font-family: "Courier Prime", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-size: 18px;
+  width:50%;
+  margin-top:5%;
+  margin-left:5%;
+}
+#btn1{
+  margin-top:5%;
+  padding:12px 24px;
+  border:2px solid var(--green);
+  font-size: 16px;
+  width:175px;
+  height:50px;
+  color:var(--green);
+  z-index:1;
+}
+#btn1:hover{
+  background-color: var(--yellow);
+  color:var(--green);
+}
+.right-num1 p{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:48px;
+  margin-right: 10%;
+}
+.right-num1{
+  margin-left:60%;
+  margin-top:-13%
+}
+.right-num2 p{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:48px;
+  margin-right: 10%;
+}
+.right-num2{
+  margin-left:80%;
+  margin-top:-9.8%;
+}
+.teachers{
+  background-color:var(--yellow) ;
+  color:black;
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:48px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.membership h1{
+  margin-bottom: 1%;
+}
+.membership{
+  background-color: var(--yellow);
+  color:black;
+  text-align: center;
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+}
+.high1{
+  margin-top:2%;
+}
+.high2{
+  margin-top:2%;
+}
+
+@keyframes new {
+  from{
+    opacity:0;
+    transform: translateX(100%);
+  }to{
+    opacity:1;
+    transform: translateX()
+  }
+  
+}
+@keyframes new2 {
+  from{
+    opacity:0;
+    transform: translateX(-50%);
+  }to{
+    opacity:1;
+    transform:translateX();
+  }  
+}
+@keyframes front {
+  from{
+    opacity:0;
+    clip-path:inset (100% 100% 0 0);
+    transform: scale(0.2);
+  }
+  to{
+    opacity:1;
+    clip-path:inset(0 0 0 0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8; 
+  }
+}
+.main,.second,.main2,.second2,.email,.membership,.teachers,.text-num,#login,#btn,#btn0{
+  animation:front linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.lines{
+  animation:new linear;
+  animation-timeline:view();
+  animation-range:entry 0% cover 50%;
+}
+.email{
+  animation: new2 linear;
+  animation-timeline:view();
+  animation-range:entry 0% cover 50%;
+}

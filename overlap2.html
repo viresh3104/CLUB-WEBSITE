@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Text Overlay</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hover-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Prevents interfering with mouse interactions */
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1; /* Show text when hovering */
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over the image</h2>
+    <div class="image-container">
+        <img src="cute.png" alt="Sample Image">
+        <div class="hover-text">Hello, I'm an overlay!</div>
+    </div>
+</body>
+</html>

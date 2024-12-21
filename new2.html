@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Horizontal Scrolling Text</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .scroller-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .scroller {
+      display: flex;
+      white-space: nowrap;
+      animation: scroll 10s linear infinite;
+    }
+
+    .scroller span {
+      font-size: 2em;
+      padding-right: 50px; /* Adjust space between text elements */
+      color: #333;
+    }
+
+    /* Duplicate the text to ensure seamless looping */
+    .scroller .text {
+      display: inline-block;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroller-container">
+    <div class="scroller">
+      <div class="text">
+        <span>Hello World!</span>
+        <span>Welcome to the scrolling text demo.</span>
+        <span>Enjoy this smooth continuous scroll.</span>
+        <span>Text scrolling forever!</span>
+      </div>
+      <div class="text">
+        <!-- Duplicate the same text to create a seamless loop -->
+        <span>Hello World!</span>
+        <span>Welcome to the scrolling text demo.</span>
+        <span>Enjoy this smooth continuous scroll.</span>
+        <span>Text scrolling forever!</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AICC Website</title><link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=New+Amsterdam&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+    .SLIDESHOW{
+      background-color: #FFF4DE;
+    }
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
+      border: 5px solid #333;
+      border-radius: 10px;
+      left:15%;
+      top:5%;
+    }
+    .slideshow-container img{
+      position:realtive;
+      justify-content: center;
+      align-items: center;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* Adjust according to the number of slides */
+      animation: slide 9s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .slide img {
+      width: 34%;
+      height: 123%;
+      object-fit: cover;
+    }
+
+    /* Animation for the slideshow */
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33.33% { transform: translateX(0); }
+      36.66% { transform: translateX(-100%); }
+      66.66% { transform: translateX(-100%); }
+      69.99% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    /* Optional: Add captions */
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+    #SC-1{
+      width: 100%;
+      overflow: hidden;
+      background-color: #FFF4DE;
+      padding: 20px 0;
+      position: relative;
+    }
+    #SC-2{
+      width: 100%;
+      overflow: hidden;
+      background-color: rgb(12,84,60);
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .scroller {
+      display: flex;
+      white-space: nowrap;
+      animation: scroll 5s linear infinite;
+    }
+
+    .scroller span {
+      font-size: 2em;
+      padding-right: 50px; /* Adjust space between text elements */
+      margin-bottom: 5%;
+      font-size:48px;
+      font-family: "New Amsterdam", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    /* Duplicate the text to ensure seamless looping */
+    .scroller .text {
+      display: inline-block;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+    .space{
+      background-color:#FFF4DE;
+      width:50px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <u> <a href="./index.html" id="heading">Club AICC</a></u>
+      </h1>
+      <div class="college"><h5>GHRCEM,Pune</h5></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="./login.html">Join us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <div class="preface">
+      <div class="background">
+        <div class="front">
+          <img src="logo.jpg" />
+        </div>
+      </div>
+      <div class="title"><h1>We Are Club AICC!</h1></div>
+
+      <div class="vision">
+        <div class="main">Located in East Austin, Eastside Paddle Club is an exclusive community dedicated to providing the ultimate pickleball experience.
+        </div>
+        <div class="second"><p>Enjoy a contemporary venue to play pickleball, socialize, and relax in style.</p>
+          We're a place where people of all ages and skill levels can come together for dynamic sporting and social experiences.
+        </div>
+        <button id="btn0">Become Member</button>
+        <img src="cute.png">
+      </div>
+
+      <section id="about">
+      <div class="objectives">
+        <div class="img1"><img src="img1.jpg"></div>
+        <div class="img2"><img src="img2.jpg"></div>
+        <div class="img3"><img src="img3.jpg"></div>
+        <div class="main2">A perfect blend of modern vibes and vintage values</div>
+        <div class="second2">We're a state of the art facility and top-of-the-line club with an inviting atmosphere and sense of tradition you won't find anywhere else.</div>
+        <button id="btn">Become Member</button>
+      </div></section>
+
+      <section id="events">    
+      <div class="content">
+        <!-- <div class="image"><img src="image.png"></div> -->
+        <div class="slideshow-container">
+          <div class="slides">
+            <div class="slide">
+              <img src="https://th.bing.com/th/id/OIP.vCkO1ZP3rUvod7ep3Avu5AAAAA?rs=1&pid=ImgDetMain" alt="Slide 1">
+              <div class="caption">This is Slide 1</div>
+            </div>
+            <div class="slide">
+              <img src="https://assets.website-files.com/5b3dd54182ecae4d1602962f/609e33e18c5000af6211f094_HR%20Hackathon%20-%20Section%202.jpg" alt="Slide 2">
+              <div class="caption">This is Slide 2</div>
+            </div>
+            <div class="slide">
+              <img src="https://th.bing.com/th/id/OIP.NhzbofQevCIHf46HTde-ZwHaDx?rs=1&pid=ImgDetMain" alt="Slide 3">
+              <div class="caption">This is Slide 3</div>
+            </div>
+          </div>
+        </div>
+        <div class="lines"><p>Experience pickleball like never before</p><div class="lines2">Our mission is to elevate the pickleball experience by providing a unique atmosphere with a full suite of amenities similar to traditional sports clubs.</div></div>
+      </div></section>
+    
+
+      
+      
+
+      <div class="scroller-container" ID="SC-1">
+        <div class="scroller" ID="ONE">
+          <div class="text"id="text1">
+            <span>Hello World!</span>
+            <span>Welcome to Club AICC.</span>
+            <span>Enjoy this smooth continuous phase of Growth.</span>
+            <span>Keep Learning forever!</span>
+          </div>
+          <div class="text">
+            <!-- Duplicate the same text to create a seamless loop -->
+            <span>Hello World!</span>
+            <span>Welcome to Club AICC.</span>
+            <span>Enjoy this smooth continuous phase of Growth.</span>
+            <span>Keep Learning forever!</span>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <div class="login">
+        <img src="image.png">
+        <div class="email">
+        <p>Stay tuned for updates</p>
+        <b>Sign up to our email list to receive news, important updates, and special offers.</b>
+        <input type="text" placeholder="Enter your Email"><button id="btn3">Send Email</button>
+       </div></div>
+
+
+       <h1 id="login">Our Supporters</h1>
+      <div class="teachers">
+        <div class="t1">lorem1</div>
+        <div class="t1">lorem2</div>
+        <div class="t1">lorem3</div>
+        <div class="t1">lorem4</div>
+        <div class="t1">lorem5</div>
+      </div>
+
+      <div class="text-num">
+        <div class="left-text"><p>Largest pickleball facility in Austin, Texas</p>
+        <b>Tired of waiting for courts in Austin? Eastside Paddle Club has nearly 30,500 square feet of space with 10 different courts to choose from.</b>
+        <button id="btn1">Become Member</button>
+        </div>
+        <div class="right-num1">
+          <p>22,000 </p>
+          Indoor Square Feet
+          <p>8500 </p>
+          Rooftop Square Feet 
+        </div>
+        <div class="right-num2">
+          <p>6</p>
+          Indoor Courts
+          <p>4</p>
+          Rooftop Courts (Coming Soon)
+        </div>
+      </div>
+
+
+      <div class="membership">
+        <h2>Our Membership Plans</h2>
+        <div class="high1">In addition to our two primary individual membership options, we now provide corporate and family packages as well.</div>
+
+        <div class="high2"><b>All membership plans include court reservations at no additional cost.</b></div>
+      </div>
+
+    <footer>
+      <div class="base" id="left">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio maiores
+        eaque voluptate! Pariatur velit vitae distinctio, soluta explicabo natus
+        ipsam sed earum voluptas?Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consectetur, in.
+      </div>
+      <div class="base" id="center">
+        <p>Do Checkout this Pages</p>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Members</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="base" id="right">
+        <h2>Get Social With Us</h2>
+        <img src="insta.png" />
+        <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png">
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
